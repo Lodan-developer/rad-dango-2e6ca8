@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery & Events | Imran Junior School</title>
+    <link rel="icon/x" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-flex">
+            <div class="contact-info">
+                <span><i class="fas fa-phone-alt"></i> 0772-445 852 / 0701-531 936</span>
+                <span><i class="fas fa-envelope"></i> info@imranjuniorschool.ac.ug</span>
+                <span><i class="fas fa-map-marker-alt"></i> Luteete-Gayaza Road, Kampala</span>
+            </div>
+            <div class="portal-links">
+                <a href="admissions.html"><i class="fas fa-user-graduate"></i> Admissions Open</a>
+                <a href="contact.html" class="portal-btn"><i class="fas fa-lock"></i> Parent Portal</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Live Announcements Ticker Added for High Interactivity -->
+    <div class="announcement-ticker">
+        <div class="container ticker-flex">
+            <span class="ticker-badge"><i class="fas fa-bullhorn"></i> NOTICE:</span>
+            <div class="ticker-text">
+                <p>Term I, 2027 Admissions are officially ongoing for Nursery, Primary, and Tahfidh Quran Memorisation Centre! Secure your vacancy early.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-icon">
+                <img src="images/icon.png" alt="School logo" width="70" height="70">
+                <div class="logo">
+                    <h1>IMRAN</h1>
+                    <p>Junior School & Quran Memorisation Centre</p>
+                </div>                
+            </div>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics & Tahfidh</a></li>
+                    <li><a href="admissions.html">Admissions & Fees</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner page-banner-gallery">
+        <div class="container">
+            <h2>School Gallery & Events</h2>
+            <p>Capturing joyful moments, graduations, Quran memorisation milestones, and vibrant campus life.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section with Interactive Filters & Lightbox Support -->
+    <section class="gallery-container container">
+        <div class="academic-intro" style="margin-bottom: 40px;">
+            <h3>A Window Into Our Vibrant School Community</h3>
+            <p>Browse through our interactive photo categories to experience the serene learning atmosphere, co-curricular engagements, and celebratory milestones of our pupils.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all"><i class="fas fa-images"></i> All Photos</button>
+            <button class="filter-btn" data-filter="events"><i class="fas fa-calendar-day"></i> Events & Functions</button>
+            <button class="filter-btn" data-filter="grad"><i class="fas fa-graduation-cap"></i> Graduations & IPLE</button>
+            <button class="filter-btn" data-filter="uniforms"><i class="fas fa-child"></i> Pupils & Uniforms</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <!-- Picture 1 -->
+            <div class="gallery-item" data-category="grad">
+                <img src="images/IPLE graduates.JPG" alt="Graduation certificates">
+                <div class="gallery-overlay">
+                    <h4>Certificate Award Ceremony</h4>
+                    <p><i class="fas fa-search-plus"></i> Click to enlarge</p>
+                </div>
+            </div>
+
+            <!-- Picture 2 -->
+            <div class="gallery-item" data-category="events">
+                <img src="images/students in class.png" alt="Pupils learning">
+                <div class="gallery-overlay">
+                    <h4>Pupils Learning in Class</h4>
+                    <p><i class="fas fa-search-plus"></i> Click to enlarge</p>
+                </div>
+            </div>
+
+            <!-- Picture 3 -->
+            <div class="gallery-item" data-category="events">
+                <img src="images/presentation.JPG" alt="Performances">
+                <div class="gallery-overlay">
+                    <h4>Pupils Performing at Speech Day</h4>
+                    <p><i class="fas fa-search-plus"></i> Click to enlarge</p>
+                </div>
+            </div>
+
+            <!-- Picture 4 -->
+            <div class="gallery-item" data-category="events">
+                <img src="images/presentation.JPG" alt="School group photo">
+                <div class="gallery-overlay">
+                    <h4>Our School Community</h4>
+                    <p><i class="fas fa-search-plus"></i> Click to enlarge</p>
+                </div>
+            </div>
+
+            <!-- Picture 5 -->
+            <div class="gallery-item" data-category="grad">
+                <img src="images/graduates.JPG" alt="Graduation gowns">
+                <div class="gallery-overlay">
+                    <h4>Kindergarten & Primary Graduation</h4>
+                    <p><i class="fas fa-search-plus"></i> Click to enlarge</p>
+                </div>
+            </div>
+
+            <!-- Picture 6 -->
+            <div class="gallery-item" data-category="grad">
+                <img src="images/certificates.jpeg" alt="Proud graduate">
+                <div class="gallery-overlay">
+                    <h4>Proud Pupils Receiving Certificate</h4>
+                    <p><i class="fas fa-search-plus"></i> Click to enlarge</p>
+                </div>
+            </div>
+
+            <!-- Picture 7 -->
+            <div class="gallery-item" data-category="events">
+                <img src="images/directors.JPG" alt="Staff and pupils">
+                <div class="gallery-overlay">
+                    <h4>School Directors</h4>
+                    <p><i class="fas fa-search-plus"></i> Click to enlarge</p>
+                </div>
+            </div>
+
+            <!-- Picture 8 -->
+            <div class="gallery-item" data-category="uniforms">
+                <img src="images/Quran memorisation.JPG" alt="Boys in uniform">
+                <div class="gallery-overlay">
+                    <h4>Pupils Who Excelled in Tahfidh</h4>
+                    <p><i class="fas fa-search-plus"></i> Click to enlarge</p>
+                </div>
+            </div>
+
+            <!-- Picture 9 -->
+            <div class="gallery-item" data-category="events">
+                <img src="images/class photo.JPG" alt="School event">
+                <div class="gallery-overlay">
+                    <h4>School Event & Celebration</h4>
+                    <p><i class="fas fa-search-plus"></i> Click to enlarge</p>
+                </div>
+            </div>
+
+            <!-- Picture 10 -->
+            <div class="gallery-item" data-category="uniforms">
+                <img src="images/certificate award.png" alt="Pupils receiving awards">
+                <div class="gallery-overlay">
+                    <h4>Our Pupils Receiving Awards</h4>
+                    <p><i class="fas fa-search-plus"></i> Click to enlarge</p>
+                </div>
+            </div>
+
+            <!-- Picture 11 -->
+            <div class="gallery-item" data-category="events">
+                <img src="images/shiek and director.png" alt="School administrators">
+                <div class="gallery-overlay">
+                    <h4>Addressing Parents and Students</h4>
+                    <p><i class="fas fa-search-plus"></i> Click to enlarge</p>
+                </div>
+            </div>
+
+            <!-- Picture 12 -->
+            <div class="gallery-item" data-category="grad">
+                <img src="images/IPLE graduates.JPG" alt="Graduating pupils">
+                <div class="gallery-overlay">
+                    <h4>Celebrating Academic Excellence</h4>
+                    <p><i class="fas fa-search-plus"></i> Click to enlarge</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Lightbox Modal Overlay (Hidden by default) -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightboxImg" alt="Enlarged gallery view">
+        <div id="lightboxCaption"></div>
+    </div>
+
+ <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Imran Junior School</h3>
+                <p><strong>Motto:</strong> For A Strong Foundation</p>
+                <p><i class="fas fa-map-marker-alt"></i> Luteete-Gayaza Road, P.O. Box 8216 Kampala - Uganda</p>
+                <p><i class="fas fa-phone-alt"></i> 0772-445 852 / 0701-531 936 / 0703-913 308</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics & Tahfidh</a></li>
+                    <li><a href="admissions.html">Fee Structure</a></li>
+                    <li><a href="gallery.html">Photo Gallery</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Working Hours</h4>
+                <p>Monday - Friday: 7:30 AM - 5:00 PM</p>
+                <p>Saturday: 8:00 AM - 1:00 PM</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                 </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Imran Junior School & Quran Memorisation Centre. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
