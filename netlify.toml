@@ -1,0 +1,14 @@
+[build]
+  base = "website"
+  command = ""
+  publish = "public"
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/api/inquiries"
+  to = "/.netlify/functions/inquiries"
+  status = 200
+  methods = ["POST"]
